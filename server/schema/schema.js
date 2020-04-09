@@ -9,6 +9,11 @@ var books = [
   {name:'The Final Empire', genre: 'Fantasy', id:'2'},
   {name:'The Long Earth', genre: 'Sci-Fi', id:'3'},
 ];
+var authors = [
+  {name:'Patrick Rothfuss',age:46,id:'1'},
+  {name:'Brandon Sanderson',age:44,id:'2'},
+  {name:'Terry Pratchett',age:68,id:'3'},
+];
 
 const BookType = new GraphQLObjectType({
   name: 'Book',
