@@ -30,7 +30,13 @@ class AddBook extends Component {
     e.preventDefault();
     console.log(`===>> the STATE IS HERE: `, this.state)
     console.log(`===>> the PROPS ARE HERE: `, this.props)
-    this.props.addBookMutation();
+    this.props.addBookMutation({
+      variables:{
+        name: this.state.name,
+        genre: this.state.genre,
+        authorId: this.state.authorId
+      }
+    });
   }
 
   render() {
