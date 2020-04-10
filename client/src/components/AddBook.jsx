@@ -7,13 +7,13 @@ class AddBook extends Component {
   constructor(props){
     super(props);
     this.state = {
-      name:'',
-      genre:'',
-      authorId:''
+      name:"",
+      genre:"",
+      authorId:""
     };
   };
   displayAuthors(){
-    const data = this.props.data;
+    const data = this.props.getAuthorsQuery;            // THIS CHANGED !!!
     if(data.loading){
       return(
         <option disabled>Loading Authors...</option>
@@ -29,6 +29,8 @@ class AddBook extends Component {
   submitForm(e){
     e.preventDefault();
     console.log(`===>> the STATE IS HERE: `, this.state)
+    console.log(`===>> the PROPS ARE HERE: `, this.props)
+    this.props.addBookMutation();
   }
 
   render() {
