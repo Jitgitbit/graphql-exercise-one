@@ -17,3 +17,5 @@ CONNECTING TO     mLab   !!!!
 mongodb+srv://thierrydk:<password>@cluster0-yyv3n.mongodb.net/test?retryWrites=true&w=majority
 
 npm install mongoose
+
+npm install cors
