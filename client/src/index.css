@@ -14,9 +14,9 @@ body {
 } */
 
 #main h1{
-  color: #AD1457;
+  color: #fff;
   text-align: center;
-  background-color: #fff;
+  background-color: purple;
 }
 #main{
   padding: 0px;
@@ -45,6 +45,9 @@ form{
   left: 20px;
   bottom: 20px;
   width: 400px;
+  border: 1px solid #880E4F;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  border-radius: 4px;
 }
 form .field{
   display: grid;
