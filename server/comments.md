@@ -19,3 +19,5 @@ mongodb+srv://thierrydk:<password>@cluster0-yyv3n.mongodb.net/test?retryWrites=t
 npm install mongoose
 
 npm install cors
+
+npm install nodemon ( -> now run with npm start !)

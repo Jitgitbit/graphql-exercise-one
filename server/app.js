@@ -12,7 +12,7 @@ app.use(cors());
 //connect to db
 mongoose
  .connect(
-  "mongodb+srv://thierrydk:mySecretPassword@cluster0-yyv3n.mongodb.net/test?retryWrites=true&w=majority",
+  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0-yyv3n.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
   { useNewUrlParser: true, useUnifiedTopology: true }
  )
  .then(() => console.log("Connected to MongoDB Atlas"))
